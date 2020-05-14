@@ -59,28 +59,12 @@ public class DemoActivity extends BaseActivity  {
                      if (loginBean!=null){
                          if (loginBean.getResult().getResultCode().equals("8888")){
                              mDemoViewModel.userID.set("8888");
-                         }else {
-                             mDemoViewModel.userID.set(loginBean.getResult().getResultCode());
                          }
                      }
                  }
              });
          }
     }
-
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        ZQBBLogUtils.v("activity_onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        ZQBBLogUtils.v("activity_onPause");
-    }
-
 
 
 }

@@ -1,0 +1,54 @@
+ext{
+    appcompat_version = '1.1.0'
+    lifecycle_version = '2.2.0'
+
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 15,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "zqbb_1.0"
+    ]
+    dependencies = [
+            //androidx
+            "appcompat"             : "androidx.appcompat:appcompat:$appcompat_version",
+            "appcompat-resources"   : "androidx.appcompat:appcompat-resources:$appcompat_version",
+            "constraintlayout"      : "androidx.constraintlayout:constraintlayout:2.0.0-beta4",
+            "recyclerview"          : "androidx.recyclerview:recyclerview:$appcompat_version",
+            "recyclerview-selection": "androidx.recyclerview:recyclerview-selection:1.1.0-rc01",
+            "runner"                : "androidx.test:runner:1.1.0-alpha4",
+            "espresso"              : "androidx.test.espresso:espresso-core:3.1.0-alpha4",
+            "multidex"              : "androidx.multidex:multidex:2.0.1",
+
+            //相关组件
+            "lifecycle-viewmodel"   : "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version",
+            "lifecycle-livedata"    : "androidx.lifecycle:lifecycle-livedata:$lifecycle_version",
+            "lifecycle-runtime"     : "androidx.lifecycle:lifecycle-runtime:$lifecycle_version",
+            "lifecycle-common"      : "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version",
+            "lifecycle-viewmodel-savedstate"  : "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version",
+            "lifecycle-compile"     : "androidx.lifecycle:lifecycle-compiler:$lifecycle_version",
+            "lifecycle-reactivestreams" : "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version",
+
+            "glide"                 : "com.github.bumptech.glide:glide:4.11.0",
+            "glide-compiler"  : "com.github.bumptech.glide:compiler:4.11.0",
+            "easypermissions"       : "pub.devrel:easypermissions:3.0.0",
+            "fastjson"              : "com.alibaba:fastjson:1.1.71.android",
+            "autosize"              : "me.jessyan:autosize:1.2.1",
+            "dagger-android"        : "com.google.dagger:dagger-android:2.17",
+            "dagger-android-support": "com.google.dagger:dagger-android-support:2.17",
+            "dagger-android-processor" : "com.google.dagger:dagger-android-processor:2.17",
+            "dagger"                : "com.google.dagger:dagger:2.17",
+            "dagger-compiler"       : "com.google.dagger:dagger-compiler:2.17",
+
+            "retrofit"              : "com.squareup.retrofit2:retrofit:2.8.1",
+            "converter-scalars"     : "com.squareup.retrofit2:converter-scalars:2.8.1",
+            "converter-gson"        : "com.squareup.retrofit2:converter-gson:2.8.1",
+            "adapter-rxjava2"       : "com.squareup.retrofit2:adapter-rxjava2:2.8.1",
+            "rxjava"                : "io.reactivex.rxjava3:rxjava:3.0.0",
+            "rxandroid"             : "io.reactivex.rxjava3:rxandroid:3.0.0",
+            "cookie_jar"            : "com.github.franmontiel:PersistentCookieJar:v1.0.1",
+            "utilcode"              : "com.blankj:utilcodex:1.28.4",
+
+            ]
+}
